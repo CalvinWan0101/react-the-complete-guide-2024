@@ -1,3 +1,11 @@
 export default function TabButton({ label }) {
-    return <li><button>{label}</button></li>;
+    function handleClick() {
+        console.log("Hello world");
+    }
+
+    return (
+        <li>
+            <button onClick={handleClick}>{label}</button>
+        </li>
+    );
 }
